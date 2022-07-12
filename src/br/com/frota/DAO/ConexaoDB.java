@@ -1,4 +1,4 @@
-package banco.DAO;
+package br.com.frota.DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

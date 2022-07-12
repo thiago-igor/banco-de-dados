@@ -1,6 +1,6 @@
-package banco.DAO;
+package br.com.frota.DAO;
 
-import banco.DAO.model.Marca;
+import br.com.frota.model.Marca;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,30 +1,35 @@
-package banco.model;
+package br.com.frota.model;
 
-public class MarcaPneu extends GenericModel {
+public class Banda extends GenericModel {
     private String descricao;
+    private String lado;
 
-    public MarcaPneu(String descricao) {
+    public Banda(String descricao) {
         this.descricao = descricao;
     }
 
-    public MarcaPneu(Integer id, String descricao) {
+    public Banda(Integer id, String descricao, String lado) {
         this.descricao = descricao;
+        this.lado = lado;
         super.setId(id);
     }
 
     public String getDescricao() {
         return descricao;
     }
+    public String getLado(){ return lado; }
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    public void setLado(String lado) { this.lado = lado; }
 
     @Override
     public String toString() {
-        return "Marca {" +
+        return "Banda {" +
                 "id='" + this.getId() + "\'" +
                 "descricao='" + descricao + "\'" +
+                "lado='" + lado + "\'" +
                 '}';
     }
 }

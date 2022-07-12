@@ -1,4 +1,4 @@
-package banco.model;
+package br.com.frota.model;
 
 public class GenericModel {
 
